@@ -1536,7 +1536,7 @@ searchEngineLogoPath = staticServerURI + "img/"; (function(f, h) {
                     $(document.body).on("mousewheel DOMMouseScroll",
                     function(a) {
                         if (NavSite.isLocked() || Search_Engine.searchInputViewFocus) return ! 1;
-                        if ($.isEmptyObject(MySetting.currentView)) if (a = a.originalEvent.wheelDelta && (0 < a.originalEvent.wheelDelta ? 1 : -1) || a.originalEvent.detail && (0 < a.originalEvent.detail ? -1 : 1), 0 < a) c && NavSite.isShow() && NavSite.hide();
+                        if ($.isEmptyObject(MySetting.currentView)) if (a = a.originalEvent.wheelDelta && (0 < a.originalEvent.wheelDelta ? 1 : -1) || a.originalEvent.detail && (0 < a.originalEvent.detail ? -1 : 1), 0 < a) c && NavSite.isShow() && NavSite.show();
                         else if (0 > a && !NavSite.isShow()) return NavSite.show(),
                         !1
                     });
